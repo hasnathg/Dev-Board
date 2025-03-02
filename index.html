@@ -20,7 +20,7 @@
         <div class="bg-gray-100 text-white rounded-full w-20 h-12 flex items-center justify-center"> 
           <img src="assets/checkbox.png" alt="Checkbox Icon" class="h-5 w-5 mr-1"> <span class="text-black font-bold">23</span> 
         </div>
-        <div class="rounded-full w-8 h-8 flex items-center justify-center">
+        <div id="themeToggle" class="rounded-full w-8 h-8 flex items-center justify-center">
           <img src="assets/theme-btn.png" alt="Profile Icon" class="h-6 w-6">
         </div>
       </div>
@@ -143,6 +143,16 @@
     // Set Current Date
     document.getElementById("currentDate").innerText = new Date().toDateString();
 
+    // Function to generate a random hex color
+    function getRandomColor() {
+        return `#${Math.floor(Math.random()*16777215).toString(16)}`;
+    }
+
+    // Add event listener to the theme button
+    document.getElementById("themeToggle").addEventListener("click", function() {
+        document.body.style.backgroundColor = getRandomColor();
+    });
+
     // Task Completion Logic
     let taskCount = 6;
     const taskCountEl = document.getElementById("taskCount");
@@ -159,9 +169,14 @@
           // Find Task Title
           const taskTitle = this.closest(".bg-gray-50").querySelector("h2").textContent;
 
+          // Get the exact time when clicked
+          const now = new Date();
+            const formattedTime = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
+
+
           // Add Activity Log Entry Below the Border
           const logEntry = document.createElement("p");
-          logEntry.textContent = `✔ You completed: ${taskTitle}`;
+          logEntry.textContent = `You completed ${taskTitle} at  ${formattedTime}`;
           logEntry.classList.add("text-gray-700", "mt-1");
           activityLogEl.appendChild(logEntry);
         }
@@ -172,6 +187,8 @@
     document.getElementById("clearHistory").addEventListener("click", function() {
       activityLogEl.innerHTML = ""; // Clear log
     });
+  
+  
 
   </script>
 </body>
