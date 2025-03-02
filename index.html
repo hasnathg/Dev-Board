@@ -6,7 +6,7 @@
   <title>Dev-Board</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 p-6">
+<body class="bg-gray-100 p-16">
   <div class="bg-white rounded-xl shadow-lg">
 
     <div class="bg-white shadow-md p-4 flex items-center justify-between mb-4">
@@ -18,7 +18,7 @@
       </div>
       <div class="flex items-center space-x-4">
         <div class="bg-gray-100 text-white rounded-full w-20 h-12 flex items-center justify-center"> 
-          <img src="assets/checkbox.png" alt="Checkbox Icon" class="h-5 w-5 mr-1"> <span class="text-black font-bold">23</span> 
+          <img src="assets/checkbox.png" alt="Checkbox Icon" class="h-5 w-5 mr-1"> <span id="completedCount" class="text-black font-bold">23</span> 
         </div>
         <div id="themeToggle" class="rounded-full w-8 h-8 flex items-center justify-center">
           <img src="assets/theme-btn.png" alt="Profile Icon" class="h-6 w-6">
@@ -41,7 +41,7 @@
             </div>
           </div>
       
-          <div class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-4 rounded-lg col-span-6 font-semibold text-lg flex items-center">
+          <div id="discoverSection" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-4 rounded-lg col-span-6 font-semibold text-lg flex items-center">
             <div class="grid grid-cols-2 items-center w-full">
               <div class="flex justify-center">
                 <img src="assets/board.png" alt="">
@@ -79,60 +79,60 @@
 
     </div>
 
-    <div class="grid grid-cols-4 gap-6"> 
-      <div class="col-span-3 grid grid-cols-3 gap-6">
+    <div class="grid grid-cols-4 gap-6 text-lg"> 
+      <div class="col-span-3 grid grid-cols-3 gap-6 text-lg">
         <div class="bg-gray-50 p-4 rounded-lg shadow-md">
           <button class="bg-white rounded px-3 py-1">Shop Ease</button>
           <h2 class="text-lg font-bold">Fix Mobile Button Issue</h2>
-          <p class="text-sm text-gray-600 bg-white">Debug using Chrome DevTools, <br>check for overlapping...</p>
+          <p class="text-lg text-gray-600 bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
           <div class="flex justify-between">
-            <div> <span class="text-sm text-gray-500 block mb-2">Deadline: <br>21 March 2025</span></div>
-            <div><button class="complete-btn block bg-blue-500 text-white text-xs px-3 py-1 rounded">Completed</button></div>
+            <div> <span class="text-lg text-gray-500 block mb-2">Deadline: <br>21 March 2025</span></div>
+            <div><button class="complete-btn block bg-blue-500 text-white text-lg px-3 py-1 rounded">Completed</button></div>
           </div>
         </div>
-        <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+        <div class="bg-gray-50 p-4 rounded-lg shadow-md text-lg">
           <button class="bg-white rounded px-3 py-1">Soft Pay</button>
           <h2 class="text-lg font-bold">Add Pay Success Modal</h2>
-          <p class="text-sm text-gray-600 bg-white">A card component has a figure, a body part...</p>
+          <p class="text-lg text-gray-600 bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
           <div class="flex justify-between">
-            <div> <span class="text-sm text-gray-500 block mb-2">Deadline: <br>25 March 2025</span></div>
-            <div><button class="complete-btn block bg-blue-500 text-white text-xs px-3 py-1 rounded">Completed</button></div>
+            <div> <span class="text-lg text-gray-500 block mb-2">Deadline: <br>25 March 2025</span></div>
+            <div><button class="complete-btn block bg-blue-500 text-white text-lg px-3 py-1 rounded">Completed</button></div>
           </div>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg shadow-md">
           <button class="bg-white rounded px-3 py-1">Meta</button>
           <h2 class="text-lg font-bold">Add new reaction ✋</h2>
-          <p class="text-sm text-gray-600 bg-white">A card component has a figure, a body part...</p>
+          <p class="text-lg text-gray-600 bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
           <div class="flex justify-between">
-            <div> <span class="text-sm text-gray-500 block mb-2">Deadline: <br>31 March 2025</span></div>
-            <div><button class="complete-btn block bg-blue-500 text-white text-xs px-3 py-1 rounded">Completed</button></div>
+            <div> <span class="text-lg text-gray-500 block mb-2">Deadline: <br>31 March 2025</span></div>
+            <div><button class="complete-btn block bg-blue-500 text-white text-lg px-3 py-1 rounded">Completed</button></div>
           </div>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg shadow-md">
           <button class="bg-white rounded px-3 py-1">Programming Hero</button>
           <h2 class="text-lg font-bold">Fix Video Loading Issue</h2>
-          <p class="text-sm text-gray-600 bg-white">A card component has a figure, a body part...</p>
+          <p class="text-lg text-gray-600 bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
           <div class="flex justify-between">
-            <div> <span class="text-sm text-gray-500 block mb-2">Deadline: <br>21 March 2025</span></div>
-            <div><button class="complete-btn block bg-blue-500 text-white text-xs px-3 py-1 rounded">Completed</button></div>
+            <div> <span class="text-lg text-gray-500 block mb-2">Deadline: <br>21 March 2025</span></div>
+            <div><button class="complete-btn block bg-blue-500 text-white text-lg px-3 py-1 rounded">Completed</button></div>
           </div>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg shadow-md">
           <button class="bg-white rounded px-3 py-1">Google LLC</button>
           <h2 class="text-lg font-bold">Integrate AI search</h2>
-          <p class="text-sm text-gray-600 bg-white">A card component has a figure, a body part...</p>
+          <p class="text-lg text-gray-600 bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
           <div class="flex justify-between">
-            <div> <span class="text-sm text-gray-500 block mb-2">Deadline: <br>01 April 2025</span></div>
-            <div><button class="complete-btn block bg-blue-500 text-white text-xs px-3 py-1 rounded">Completed</button></div>
+            <div> <span class="text-lg text-gray-500 block mb-2">Deadline: <br>01 April 2025</span></div>
+            <div><button class="complete-btn block bg-blue-500 text-white text-lg px-3 py-1 rounded">Completed</button></div>
           </div>
         </div>
         <div class="bg-gray-50 p-4 rounded-lg shadow-md">
           <button class="bg-white rounded px-3 py-1">Polygon Tech</button>
           <h2 class="text-lg font-bold">Review Ami Probashi Site</h2>
-          <p class="text-sm text-gray-600 bg-white">A card component has a figure, a body part...</p>
+          <p class="text-lg text-gray-600 bg-white">Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
           <div class="flex justify-between">
-            <div> <span class="text-sm text-gray-500 block mb-2">Deadline: <br>05 May 2025</span></div>
-            <div><button class="complete-btn block bg-blue-500 text-white text-xs px-3 py-1 rounded">Completed</button></div>
+            <div> <span class="text-lg text-gray-500 block mb-2">Deadline: <br>05 May 2025</span></div>
+            <div><button class="complete-btn block bg-blue-500 text-white text-lg px-3 py-1 rounded">Completed</button></div>
           </div>
         </div>
       </div>
@@ -140,56 +140,76 @@
   </div>
   
   <script>
+
+
+document.addEventListener("DOMContentLoaded", function () {
     // Set Current Date
     document.getElementById("currentDate").innerText = new Date().toDateString();
-
-    // Function to generate a random hex color
-    function getRandomColor() {
-        return `#${Math.floor(Math.random()*16777215).toString(16)}`;
-    }
-
-    // Add event listener to the theme button
-    document.getElementById("themeToggle").addEventListener("click", function() {
-        document.body.style.backgroundColor = getRandomColor();
-    });
 
     // Task Completion Logic
     let taskCount = 6;
     const taskCountEl = document.getElementById("taskCount");
     const activityLogEl = document.getElementById("activityLog");
 
-    document.querySelectorAll(".complete-btn").forEach(button => {
-      button.addEventListener("click", function() {
-        if (!this.disabled) {
-          this.disabled = true;
-          this.classList.add("opacity-50", "cursor-not-allowed");
-          taskCount--;
-          taskCountEl.innerText = taskCount;
+    // Initialize completed count
+    let completedCount = parseInt(document.getElementById("completedCount").textContent);
 
-          // Find Task Title
-          const taskTitle = this.closest(".bg-gray-50").querySelector("h2").textContent;
-
-          // Get the exact time when clicked
-          const now = new Date();
-            const formattedTime = now.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-
-
-          // Add Activity Log Entry Below the Border
-          const logEntry = document.createElement("p");
-          logEntry.textContent = `You completed ${taskTitle} at  ${formattedTime}`;
-          logEntry.classList.add("text-gray-700", "mt-1");
-          activityLogEl.appendChild(logEntry);
-        }
-      });
+    // Add event listener to "Discover" section
+    const discoverSection = document.getElementById("discoverSection");
+    discoverSection.addEventListener("click", function() {
+        window.location.href = "blogs.html";
     });
+
+    document.querySelectorAll(".complete-btn").forEach(button => {
+        button.addEventListener("click", function () {
+            if (!this.disabled) {
+                this.disabled = true;
+                this.classList.add("opacity-50", "cursor-not-allowed");
+                taskCount--;
+                taskCountEl.innerText = taskCount;
+
+                // Get Task Title
+                const taskTitle = this.closest(".bg-gray-50").querySelector("h2").textContent;
+
+                // Get Current Time
+                const timestamp = new Date().toLocaleTimeString();
+
+                // Add activity log entry
+                const logEntry = document.createElement("p");
+                logEntry.textContent = `You completed ${taskTitle} at ${timestamp}`;
+                logEntry.classList.add("text-gray-600", "text-sm", "mt-1"); // Tailwind styling
+                activityLogEl.appendChild(logEntry);
+
+                // Increment completed count and update display
+                completedCount++;
+                document.getElementById("completedCount").textContent = completedCount;
+
+                // Alert for successful update
+                setTimeout(() => {
+                    alert("✅ Board updated successfully!");
+                }, 100); // Small delay to ensure smooth flow
+            }
+        });
+    });
+
+    // Change Background Color Randomly When Clicking Profile Icon
+    const profileButton = document.querySelector(".rounded-full.w-8.h-8");
+    if (profileButton) {
+        profileButton.addEventListener("click", function () {
+            document.body.style.backgroundColor = getRandomColor();
+        });
+    }
+
+    // Function to Generate Random Hex Color
+    function getRandomColor() {
+        return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    }
 
     // Clear Activity Log
     document.getElementById("clearHistory").addEventListener("click", function() {
-      activityLogEl.innerHTML = ""; // Clear log
+        activityLogEl.innerHTML = ""; // Clear log
     });
-  
-  
-
+});
   </script>
 </body>
 </html>
